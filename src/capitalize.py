@@ -1,6 +1,4 @@
 def capitalize(text):
-    if text == "":
-        return ""
-    first_char = text[0].upper()
-    rest_substring = text[1:]
-    return f"{first_char}{rest_substring}"
+    if not text:
+        return text
+    return text[0].upper() + text[1:].lower()
